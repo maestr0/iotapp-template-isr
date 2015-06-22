@@ -13,11 +13,10 @@ x.isr(mode, function(){}); //mode = m.EDGE_BOTH, m.EDGE_RISING, m.EDGE_NONE, or 
 ```
 
 
-###Intel(R) Edison
+###Intel(R) Edison & Intel(R) Galileo
 In regards to Intel(R) Edison, all GPIO inputs on the Edison platform are interrupt-capable, and all interrupt types are supported on all inputs. libmraa is required in order to get started. 
 
-###Intel(R) Galileo
-**Note:** Galileo Gen1 only supports EDGE_BOTH.
+**Note:** Intel(R) Galileo Gen1, Gen2, and Intel(R) Edison only supports EDGE_BOTH with the javascript implementation of mraa.
 
 
 For more information on a GPIO pin Guide, visit http://www.emutexlabs.com/project/215-intel-edison-gpio-pin-multiplexing-guide.
