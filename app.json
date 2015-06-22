@@ -1,0 +1,21 @@
+{
+   "mobile" : false,
+   "screenshotUrl" : "",
+   "highlights" : [
+      ""
+   ],
+   "articleUrl" : "https://software.intel.com/en-us/xdk/docs/intel-xdk-iot-edition-nodejs-templates",
+   "description" : "A simple node.js application intended to demonstrate how to call an ISR when an interrupt occurs on the Intel based development boards such as the Intel(R) Galileo and Edison with Arduino breakout board.",
+   "projectTypeName" : "com.intel.xdk.projecttype.iotapp",
+   "title" : "(ISR) Interrupt Service Routine",
+   "appPreview" : false,
+   "relName" : "4.0.0",
+   "tooltip" : "A simple node.js application intended to demonstrate how to call an ISR when an interrupt occurs on the Intel based development boards such as the Intel(R) Galileo and Edison with Arduino breakout board.",
+   "iconUrl" : "",
+   "repoName" : "iotapp-template-iot-isr",
+   "appName" : "demo.isr",
+   "keywords" : [
+      ""
+   ],
+   "visible" : true
+}
