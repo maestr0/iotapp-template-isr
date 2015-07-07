@@ -14,11 +14,11 @@
     2. opkg update
     3. opkg upgrade
 
-    Article: https://software.intel.com/en-us/html5/articles/tba
+    Article: https://software.intel.com/en-us/node-js-templates-for-intel-xdk-iot-edition
 */
 var m = require('mraa');
 
-function isr() {
+function a() {
     var d = new Date();
     var time = d.getTime();
     console.log("The time is " + time);
@@ -26,4 +26,4 @@ function isr() {
 
 x = new m.Gpio(14); //GPIO Pin 14
 //Note: Intel Galileo Gen1, Gen 2 and Intel Edison only supports EDGE_BOTH with mraa javascript implementation.
-x.isr(m.EDGE_BOTH, isr());
+x.isr(m.EDGE_BOTH, a());

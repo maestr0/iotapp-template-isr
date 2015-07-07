@@ -25,7 +25,7 @@ Intel(R) XDK
 -------------------------------------------
 This template is part of the Intel(R) XDK IoT Edition. 
 Download the Intel(R) XDK at http://software.intel.com/en-us/html5. To see the technical details of the sample, 
-please visit the sample article page at TBA.
+please visit the sample article page at https://software.intel.com/en-us/node-js-templates-for-intel-xdk-iot-edition.
 
 Important App Files
 ---------------------------
