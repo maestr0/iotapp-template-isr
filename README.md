@@ -8,7 +8,7 @@ First, you need to identify the desired GPIO pin being observed to trigger an in
 
 ```javascript
 var m = require('mraa');
-var x = new m.Gpio(14); //GPIO Pin 14
+var x = new m.Gpio(8); //GPIO Pin 8
 x.isr(mode, function(){}); //mode = m.EDGE_BOTH, m.EDGE_RISING, m.EDGE_NONE, or m.EDGE_FALLING
 ```
 

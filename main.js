@@ -24,6 +24,6 @@ function a() {
     console.log("The time is " + time);
 }
 
-x = new m.Gpio(14); //GPIO Pin 14
+var x = new m.Gpio(8); //GPIO Pin 8
 //Note: Intel Galileo Gen1, Gen 2 and Intel Edison only supports EDGE_BOTH with mraa javascript implementation.
 x.isr(m.EDGE_BOTH, a());
