@@ -16,14 +16,22 @@
 
     Article: https://software.intel.com/en-us/node-js-templates-for-intel-xdk-iot-edition
 */
-var m = require('mraa');
+var mraa = require('mraa');
 
-function a() {
+function myCallback() {
     var d = new Date();
     var time = d.getTime();
     console.log("The time is " + time);
 }
 
-var x = new m.Gpio(8); //GPIO Pin 8
-//Note: Intel Galileo Gen1, Gen 2 and Intel Edison only supports EDGE_BOTH with mraa javascript implementation.
-x.isr(m.EDGE_BOTH, a());
+var gpio8 = new mraa.Gpio(8); //GPIO Pin 8
+// Note: Intel Galileo Gen1, Gen 2 and Intel Edison only supports EDGE_BOTH with mraa javascript implementation.
+// EDGE_BOTH means either 0->1 or 1->0 transition
+gpio8.isr(mraa.EDGE_BOTH, myCallback);
+
+// this is meant to keep the Node process running continuously while waiting for the interruption
+setInterval(function(){
+    console.log("I'm alive");
+},1000);
+
+console.log("start");
